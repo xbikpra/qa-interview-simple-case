@@ -6,7 +6,9 @@
     "build": "tsc && vite build",
     "serve": "vite preview",
     "test:e2e": "playwright test",
-    "test:e2e:headed": "playwright test --headed"
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e_signup": "playwright test ./tests/signup/signup.test.ts",
+    "test:e2e_signup:headed": "playwright test ./tests/signup/signup.test.ts --headed"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -14,6 +16,8 @@
     "@fontsource/roboto": "^5.0.13",
     "@mui/icons-material": "^5.15.19",
     "@mui/material": "^5.15.19",
+    "date-and-time": "^3.6.0",
+    "randexp": "^0.5.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1"
